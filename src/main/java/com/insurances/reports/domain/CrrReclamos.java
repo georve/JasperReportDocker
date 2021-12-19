@@ -18,7 +18,7 @@ public class CrrReclamos implements Serializable {
     @EmbeddedId
     private CrrReclamosPK reclamosPK;
 
-    @Column(nullable = false)
+    @Column(name="fecharegistro",nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaRegistro;
 
@@ -32,7 +32,7 @@ public class CrrReclamos implements Serializable {
     @Column(name ="usuarioreclamo",columnDefinition="CHAR(30)")
     private String usuarioReclamo;
 
-    @Column(name="tiposiniestro",nullable = false)
+    @Column(name="fechasiniestro",nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private  Date fechaSiniestro;
 
